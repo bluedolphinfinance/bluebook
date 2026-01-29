@@ -5,7 +5,7 @@
 
 ## Pages
 
-- 📄 [DeFI](./Research%20Hub/DeFI.md)
-- 📄 [Data](./Research%20Hub/Data.md)
-- 📄 [Competition](./Research%20Hub/Competition)
-- 📄 [Others](./Research%20Hub/Others)
+- 📄 [DeFI](./DeFI.md)
+- 📄 [Data](./Data.md)
+- 📄 [Competition](./Competition)
+- 📄 [Others](./Others)

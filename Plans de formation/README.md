@@ -2,5 +2,5 @@
 
 ## Pages
 
-- 📄 [DeFI](./Plans%20de%20formation/DeFI)
-- 📄 [TradFI](./Plans%20de%20formation/TradFI.md)
+- 📄 [DeFI](./DeFI)
+- 📄 [TradFI](./TradFI.md)

@@ -5,11 +5,11 @@
 
 ## Pages
 
-- 📄 [La DeFI](./Wiki/La%20DeFI.md)
-- 📄 [Définitions diverses](./Wiki/D%C3%A9finitions%20diverses.md)
-- 📄 [Vocabulaire TradFi/DeFI](./Wiki/Vocabulaire%20TradFi-DeFI.md)
-- 📄 [Cours](./Wiki/Cours.md)
-- 📄 [Les pools](./Wiki/Les%20pools.md)
-- 📄 [Pendle](./Wiki/Pendle.md)
-- 📄 [Articles](./Wiki/Articles)
-- 📄 [Maker (Sky)](./Wiki/Maker%20(Sky).md)
+- 📄 [La DeFI](./La%20DeFI.md)
+- 📄 [Définitions diverses](./D%C3%A9finitions%20diverses.md)
+- 📄 [Vocabulaire TradFi/DeFI](./Vocabulaire%20TradFi-DeFI.md)
+- 📄 [Cours](./Cours.md)
+- 📄 [Les pools](./Les%20pools.md)
+- 📄 [Pendle](./Pendle.md)
+- 📄 [Articles](./Articles)
+- 📄 [Maker (Sky)](./Maker%20(Sky).md)
