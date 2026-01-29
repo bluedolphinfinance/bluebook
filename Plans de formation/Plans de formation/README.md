@@ -1,6 +1,6 @@
 # Plans de formation
 
-📄 **[DeFI](./DeFI.md)**
+## Pages
 
-📄 **[TradFI](./TradFI.md)**
-
+- 📄 [DeFI](./DeFI)
+- 📄 [TradFI](./TradFI.md)

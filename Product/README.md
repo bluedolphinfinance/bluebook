@@ -1,6 +1,6 @@
 # Product
 
-Documentation détaillée de la gamme de vaults Blue Dolphin (Prime, Balanced, Frontier).
+Documentation détaillée de la gamme de vaults Blue Dolphin.
 
 ## Pages
 

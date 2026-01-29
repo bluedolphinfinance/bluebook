@@ -1,28 +1,14 @@
 # Wiki
 
-Base de connaissances interne : glossaire, process, how-tos, et documentation technique. 
+Documentation, vocabulaire et cours DeFI.
 
-Permet l'autonomie de l'équipe et facilite l'onboarding des nouveaux membres.
+## Pages
 
-
-
-📄 **[La DeFI](./La DeFI.md)**
-
-📄 **[Définitions diverses](./Définitions diverses.md)**
-
-📄 **[Vocabulaire TradFi/DeFI](./Vocabulaire TradFi/DeFI.md)**
-
-📄 **[Cours](./Cours.md)**
-
-📄 **[Les pools](./Les pools.md)**
-
-📄 **[Pendle](./Pendle.md)**
-
-
-
-
-
-📄 **[Articles](./Articles.md)**
-
-📄 **[Maker (Sky)](./Maker (Sky).md)**
-
+- 📄 [La DeFI](./La%20DeFI.md)
+- 📄 [Définitions diverses](./D%C3%A9finitions%20diverses.md)
+- 📄 [Vocabulaire TradFi/DeFI](./Vocabulaire%20TradFi-DeFI.md)
+- 📄 [Cours](./Cours.md)
+- 📄 [Les pools](./Les%20pools.md)
+- 📄 [Pendle](./Pendle.md)
+- 📄 [Articles](./Articles)
+- 📄 [Maker (Sky)](./Maker%20(Sky).md)

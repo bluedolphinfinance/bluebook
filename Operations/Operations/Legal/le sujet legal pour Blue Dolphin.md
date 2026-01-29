@@ -1,6 +1,5 @@
-# le sujet legal pour Blue Dolphin
+# Le sujet legal pour Blue Dolphin
 
-📄 **[pense bête](./pense bête.md)**
+## Pages
 
-
-
+- 📄 [Pense bête](./pense%20b%C3%AAte.md)

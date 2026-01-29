@@ -1,6 +1,5 @@
 # Articles
 
-📄 **[Article Aave token](./Article Aave token.md)**
+## Pages
 
-
-
+- 📄 [Article Aave token](./Article%20Aave%20token.md)

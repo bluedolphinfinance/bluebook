@@ -1,6 +1,5 @@
 # Others
 
-📄 **[Vault d’options](./Vault d’options.md)**
+## Pages
 
-
-
+- 📄 [Vault d'options](./Vault%20d%E2%80%99options.md)

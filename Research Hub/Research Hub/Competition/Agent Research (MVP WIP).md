@@ -1,10 +1,7 @@
 # Agent Research (MVP WIP)
 
-Feedback sur les exports .md sur github du multi-agent Research développé par CD.
+## Pages
 
-📄 **[Gauntlet Revue](./Gauntlet Revue.md)**
-
-📄 **[MEV Capital (Jan 8)](./MEV Capital (Jan 8).md)**
-
-📄 **[Steakhouse (Jan 13)](./Steakhouse (Jan 13).md)**
-
+- 📄 [Gauntlet Revue](./Gauntlet%20Revue.md)
+- 📄 [MEV Capital (Jan 8)](./MEV%20Capital%20(Jan%208).md)
+- 📄 [Steakhouse (Jan 13)](./Steakhouse%20(Jan%2013).md)
