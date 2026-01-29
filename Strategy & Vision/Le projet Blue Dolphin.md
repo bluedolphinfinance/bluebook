@@ -1,14 +1,24 @@
 # Le projet Blue Dolphin
 
-> WIP - 1er draft : montrer à CD
+Projet de création d'une société spécialisée dans la **curation de vaults DeFi** et la **recherche DeFi institutionnelle**, s'appuyant nativement sur l'intelligence artificielle.
 
-## Valeurs fondatrices
+---
 
-- **Exigence** - c'est comme ça qu'on réussit
-- **Curiosité** - permet de continuer d'apprendre, la connaissance est pour moi un moteur
-- **Innovation** - permet de rester dans le game
-- **Leverager sur les outils d'IA** - productivité, rapidité
-- **Delivery oriented** - sinon ne pas commencer une tâche
-- **Digital native** - cohérent DLT, au niveau d'intégration, cible être proche du 100% STP
-- **Bienveillant** - on a le droit à l'erreur et de ne pas savoir
-- **À l'écoute** - les uns des autres, la todo, les axes stratégiques doivent être co-construits
+La société conçoit, sélectionne et supervise des vaults DeFi à destination d'investisseurs sophistiqués, en combinant :
+- Analyse on-chain
+- Modélisation des risques (smart contracts, liquidité, oracles, MEV, token sous-jacent, levier excessif...)
+- Allocation dynamique
+
+La curation repose sur des **méthodologies propriétaires** et des **agents IA** capables d'évaluer en continu la performance, la soutenabilité et les risques extrêmes.
+
+---
+
+En parallèle, elle produit une **recherche DeFi de haute qualité**, normalisée et actionnable, destinée aux investisseurs institutionnels et aux fournisseurs de données (ex. Kaiko), couvrant :
+- Protocoles
+- Marchés
+- Structures de rendement
+- Risques systémiques
+
+---
+
+> 💡 **L'ambition** est de devenir une brique d'infrastructure intellectuelle de la DeFi institutionnelle, à l'interface entre gestion, data et technologie.
