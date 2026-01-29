@@ -1,22 +1,6 @@
 # Operations
 
-> 💡 Centralise tous les documents et réflexions juridiques: 
+## Pages
 
-- structure corporate
-- compliance, 
-- contrats, 
-- regulatory watch. 
-Essentiel pour une activité touchant à la gestion d'actifs crypto.
-
-
-
-📄 **[Fund raising (VC)](./Fund raising (VC).md)**
-
-📄 **[Legal](./Legal.md)**
-
-
-
-
-
-
-
+- 📄 [Fund raising (VC)](./Fund%20raising%20(VC))
+- 📄 [Legal](./Legal)

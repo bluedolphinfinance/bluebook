@@ -1,48 +1,10 @@
 # Product
 
-Description
+Documentation détaillée de la gamme de vaults Blue Dolphin (Prime, Balanced, Frontier).
 
-Documentation détaillée de la gamme de vaults Blue Dolphin (Prime, Balanced, Frontier). 
+## Pages
 
-
-
-Définit le process de création d’un fonds (nom, taille max, segmentation, caractéristiques, critères de sélection du protocole, …)
-
-Définit le process de gestion d’un fonds (règle d’allocation, white listing d’actif, revue de performance, péréquation profil de risque Vs Tiering de gamme)
-
-Définit le process de destruction d’un fonds (rester lean)
-
-
-
-Gamme produit
-
-  
-Vault Prime/Balanced/Frontier
-
-  
-[Table]
-
-  
-high risk peut s’exprimer comme :
-
-  
-- high leverage
-  
-- risky underlying
-  
-- un combo des deux
-  
-
-
-📄 **[Vault Prime / Balanced / Frontier (specs)](./Vault Prime / Balanced / Frontier (specs).md)**
-
-📄 **[Ingénierie produit](./Ingénierie produit.md)**
-
-📄 **[La gamme produit](./La gamme produit.md)**
-
-📄 **[User personas / ICP ](./User personas / ICP .md)**
-
-
-
-
-
+- 📄 [Vault Prime / Balanced / Frontier (specs)](./Product/Vault%20Prime%20-%20Balanced%20-%20Frontier%20(specs).md)
+- 📄 [Ingénierie produit](./Product/Ing%C3%A9nierie%20produit.md)
+- 📄 [La gamme produit](./Product/La%20gamme%20produit.md)
+- 📄 [User personas / ICP](./Product/User%20personas%20-%20ICP%20.md)
