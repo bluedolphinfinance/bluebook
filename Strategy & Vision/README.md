@@ -4,6 +4,12 @@
 
 C'est la page à montrer aux investisseurs, partenaires et futurs employés.
 
+## Le message
+
+**On vend :**
+
+*(Remarque: l'accès à cette IA, on le vend. IA super cher ; faire écrire le Pitch par CD)*
+
 ## Pages
 
 - 📄 [Le projet Blue Dolphin](./Le%20projet%20Blue%20Dolphin.md)

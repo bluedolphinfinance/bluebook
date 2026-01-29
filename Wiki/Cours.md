@@ -1,14 +1,9 @@
 # Cours
 
-<details>
-<summary>Cours Sébastien Choukroun</summary>
-</details>
+## Cours Sébastien Choukroun
 
-  
-  
-  
-  
-<details>
-<summary>cours en présentiel 15-12-25</summary>
-</details>
+*Fichiers joints disponibles dans Notion*
 
+### Cours en présentiel 15-12-25
+
+*Notes disponibles dans Notion*
