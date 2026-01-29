@@ -1,0 +1,17 @@
+# Vocabulaire TradFi/DeFI
+
+[Table]
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
