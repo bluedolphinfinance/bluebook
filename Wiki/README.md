@@ -1,6 +1,7 @@
 # Wiki
 
-Documentation, vocabulaire et cours DeFI.
+> Base de connaissances interne : glossaire, process, how-tos, et documentation technique.
+> Permet l'autonomie de l'équipe et facilite l'onboarding des nouveaux membres.
 
 ## Pages
 
