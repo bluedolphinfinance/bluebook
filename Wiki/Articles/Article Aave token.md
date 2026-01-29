@@ -59,14 +59,10 @@ L’article montre que la séparation entre tokens et equity peut créer des con
 
 
 
-<details>
-<summary>Labs/Fondation/DAO</summary>
-</details>
-
-  
 ---
 
-  
+## Labs/Fondation/DAO
+
 ### 1. Structure et rôles
 
   
