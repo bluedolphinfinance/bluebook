@@ -7,6 +7,10 @@ C'est la page à montrer aux investisseurs, partenaires et futurs employés.
 ## Le message
 
 **On vend :**
+- un process d'investissement
+- des rendements
+- une recherche
+- une market place du savoir (avec une IA entraînée sur notre savoir)
 
 *(Remarque: l'accès à cette IA, on le vend. IA super cher ; faire écrire le Pitch par CD)*
 
