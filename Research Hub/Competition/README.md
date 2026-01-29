@@ -2,7 +2,7 @@
 
 > Qui sont les curators et comprendre le marché
 
-Cartographie des acteurs du marché de la curation DeFi et de la recherche institutionnelle.
+Cartographie des acteurs du marché de la curation DeFi et de la recherche institutionnelle. Analyse leurs forces, faiblesses, positionnement et stratégie pour identifier les opportunités de différenciation.
 
 ## Pages
 
