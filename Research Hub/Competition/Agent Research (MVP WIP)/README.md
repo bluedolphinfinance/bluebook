@@ -1,4 +1,4 @@
-# Agent Research (MVP WIP)
+# 💡 Agent Research (MVP WIP)
 
 ## Pages
 

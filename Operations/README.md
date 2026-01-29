@@ -1,4 +1,4 @@
-# Operations
+# ⚙️ Operations
 
 > 💡 Centralise tous les documents et réflexions juridiques:
 
