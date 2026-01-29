@@ -1,5 +1,5 @@
 # Roadmap
 
-Vue d'ensemble temporelle des jalons majeurs du projet. Permet d'aligner l'équipe sur les priorités.
+Vue d'ensemble temporelle des jalons majeurs du projet. Permet d'aligner l'équipe sur les priorités et de communiquer la trajectoire aux stakeholders (investisseurs, partenaires).
 
-*Voir le planning détaillé dans Notion (format timeline non exportable en Markdown)*
+🔗 **Linear** : https://linear.app/bluedolphin
