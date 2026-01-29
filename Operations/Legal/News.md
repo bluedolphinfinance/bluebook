@@ -1,8 +1,16 @@
-# News
+# News Legal
 
-Décembre 25 : Delubac a eu l’agrément MiCA
+Veille réglementaire et actualités juridiques crypto/DeFi.
 
-Cabinet avocat Orwl
+---
 
+## 2025
 
+### Décembre
+- **Delubac** : obtention agrément MiCA
 
+---
+
+## Contacts identifiés
+
+- Cabinet avocat **ORWL** (à investiguer)

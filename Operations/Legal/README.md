@@ -1,11 +1,11 @@
 # Legal
 
-> définir une stratégie réglementaire
+> Définir une stratégie réglementaire pour Blue Dolphin
 
-MiCA peut s'obtenir en moins de 6 mois ; exigence de substance
+MiCA peut s'obtenir en moins de 6 mois ; exigence de substance.
 
 ## Pages
 
-- 📄 [Le sujet legal pour Blue Dolphin](./le%20sujet%20legal%20pour%20Blue%20Dolphin.md)
-- 📄 [Les cabinets d'avocats](./Les%20cabinets%20d'avocats.md)
-- 📄 [News](./News.md)
+- 📄 [Pense-bête Legal](./pense%20b%C3%AAte.md) - Questions ouvertes et notes juridiques
+- 📄 [Les cabinets d'avocats](./Les%20cabinets%20d'avocats.md) - Contacts avocats crypto
+- 📄 [News](./News.md) - Veille réglementaire
