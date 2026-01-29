@@ -4,6 +4,12 @@
 
 Cartographie des acteurs du marché de la curation DeFi et de la recherche institutionnelle. Analyse leurs forces, faiblesses, positionnement et stratégie pour identifier les opportunités de différenciation.
 
+## Competitors Database
+
+| Nom | Type | Focus | TVL (USD) |
+|-----|------|-------|-----------|
+| Gauntlet | Vault Manager | - | - |
+
 ## Pages
 
 - 📄 [MEV Capital](./MEV%20Capital.md)

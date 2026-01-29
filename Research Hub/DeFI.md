@@ -2,9 +2,22 @@
 
 > 💡 Base de connaissance des protocoles DeFi analysés. Chaque entrée documente le protocole, son fonctionnement, ses risques, et son potentiel pour Blue Dolphin.
 
-<details>
-<summary>Laïus</summary>
-</details>
+## DeFi Protocols
+
+| Protocole | Category | Chain | TVL ($B) | Risk | Token |
+|-----------|----------|-------|----------|------|-------|
+| **Aave** | SBM Infrastructure | Ethereum, Base, Arbitrum, +18 | 33.2 | Tier I | AAVE |
+| **Lido** | LST | Ethereum | 25.9 | - | LDO |
+| **Morpho** | Vault Infrastructure | Ethereum, Base, Polygon, +7 | 5.6 | - | MORPHO |
+| **justLend** | SBM Infrastructure | Tron | 3.8 | - | JUST |
+| **Sparklend** | Onchain AM | Ethereum, Gnosis | 3.6 | - | SPK |
+| **Maple** | Onchain AM | Ethereum | 2.6 | Tier II | SYRUP |
+| **Kamino** | - | Solana | 2.4 | - | KMNO |
+| **Euler** | Vault Infrastructure | Ethereum, BNB, +12 | 1.0 | Tier II | EUL |
+
+---
+
+### Laïus
 
   
 L’essentiel de la finance décentralisée (DeFi) s’est historiquement structuré et demeure aujourd’hui concentré sur Ethereum (mainnet) et son écosystème de solutions de couche 2 (L2). 
