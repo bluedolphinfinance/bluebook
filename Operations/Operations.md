@@ -1,6 +1,12 @@
 # Operations
 
-> 💡 Centralise tous les documents et réflexions juridiques.
+> 💡 Centralise tous les documents et réflexions juridiques:
+> - structure corporate
+> - compliance
+> - contrats
+> - regulatory watch
+>
+> Essentiel pour une activité touchant à la gestion d'actifs crypto.
 
 ## Pages
 
