@@ -1,46 +1,32 @@
-# pense bête
+# Pense-bête Legal
 
-TOM : quel schéma de flux ?
+## Questions ouvertes
 
-Rémunération : qui touche : personne morale ou DAO ?
+- **TOM** : quel schéma de flux ?
+- **Rémunération** : qui touche ? Personne morale ou DAO ?
+- **Si DAO** → décentralisation concrète (seuil de la zone grise)
 
-si DAO —> décentralisation concrète (seuil de la zone grise)
+## DeFi et MiCA
 
+DeFi n'est pas encadrée par MiCA aujourd'hui (à la différence des stablecoins, conservation et échange de crypto, services sur crypto-actifs).
 
+**À faire** : lister tous les services encadrés par MiCA → zone grise, effet d'aubaine
 
-DeFI : aujourd’hui pas encadrer par MiCA (à la différence des stablecoins, conservation et échange de crypto, service sur crypto-actifs) ; lister tous les services encadrés par MiCA —> zone grise, effet d’aubaine
+**Approche prudente** : demander l'avis des autorités. La DeFi finira par être encadrée.
 
+## Publicité et communication
 
+- Pour faire de la publicité, il faut être MiCA (dans le périmètre des services couverts)
+- Sur un site web : dire que c'est un **projet** et non pas que c'est **Live**
+- Pas de promesse de rendement
 
-Approche prudente: demander l’avis des autorités
+## Passporting
 
-DEFI finira par être encadré par les autorités
+| Régulation | Passporting |
+|------------|-------------|
+| MiCA | Automatique |
+| MIF | Manuel |
 
+## Références
 
-
-pour faire de la publicité il faut être MiCA (dans le périmètre des services couverts par MiCA)
-
-
-
-sur un site web, dire que c’est un projet et non pas que c’est Live
-
-
-
-pas de promesse de rendement
-
-
-
-Key
-
-MiCA : passporting automatique
-
-MIF : passporting manuel
-
-
-
-Morpho: ne se paye pas, set-up juridique:  association
-
-Legal: 
-
-
-
+**Morpho** : ne se paye pas, set-up juridique via association
