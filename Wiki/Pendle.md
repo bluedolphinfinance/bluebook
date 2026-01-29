@@ -194,12 +194,12 @@ En TradFi, la courbe des taux montre le rendement des obligations selon leur mat
 
 Courbe des taux USD :
 
-[Table]
+| Maturité | Yield |
+|----------|-------|
+| 1y | 3.53% |
+| 2y | 3.44% |
+| 5y | 3.71% |
+| 10y | 4.17% |
 
-  
-  
-  
-  
-  
 Sur Pendle, différents pools PT avec maturités distinctes :
 

@@ -124,8 +124,13 @@ Comprendre ce qui s’échange, où, entre qui, et pourquoi
   
 ### Pont DeFi
 
-  
-[Table]
+| TradFi | DeFi |
+|--------|------|
+| Actions | Governance tokens (UNI, AAVE) |
+| Obligations | Lending positions (Aave, Morpho) |
+| Produits dérivés | Perps (GMX, dYdX), Options (Lyra) |
+| Marché primaire | IDO, Token launch |
+| Marché secondaire | DEX (Uniswap, Curve) |
 
 # MODULE 2 — Indices & ETF (paniers tokenisés)
 
@@ -188,8 +193,13 @@ Comprendre comment le temps crée de la valeur
   
 ### Pont DeFi
 
-  
-[Table]
+| TradFi | DeFi (Pendle) |
+|--------|---------------|
+| Obligation | Yield-bearing token (stETH, aUSDC) |
+| Coupon | Yield généré par le token |
+| Zéro coupon | Principal Token (PT) |
+| Strip coupon | Yield Token (YT) |
+| Courbe des taux | Implied APY curve Pendle |
 
 # MODULE 4 — Discounting & Zéro Coupon (Pendle unlock)
 
@@ -322,8 +332,13 @@ Comprendre le plumbing du système financier
   
 ### Pont DeFi
 
-  
-[Table]
+| TradFi | DeFi |
+|--------|------|
+| Repo | Lending Aave/Morpho (borrow + collateral) |
+| Haircut | LTV (Loan-to-Value) |
+| Collateral | Collateral on-chain |
+| Rehypothecation | Re-staking (EigenLayer) |
+| Overnight repo | Variable rate lending |
 
 # MODULE 5b — Crédit & CDS
 
@@ -466,8 +481,14 @@ Comprendre comment les prix se forment
   
 ### Pont DeFi
 
-  
-[Table]
+| TradFi | DeFi |
+|--------|------|
+| Bid/Ask | AMM price curve |
+| Spread | Slippage + fees |
+| Inventory risk | Impermanent loss |
+| Order book | CLOB (dYdX v4) |
+| Quote-driven | RFQ on-chain (0x, Cowswap) |
+| Market maker | Liquidity Provider (LP) |
 
 # MODULE 8 — Options : payoffs & pricing intuitif
 

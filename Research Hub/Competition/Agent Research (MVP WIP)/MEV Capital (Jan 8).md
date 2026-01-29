@@ -38,7 +38,7 @@ TVL 380 M USD (as of Dec 17th)
 (3) Risk Score: 6/10 (Elevated)
 
   
-[Table]
+*À documenter : détail du calcul du risk score*
 
   
 Comment est calculé le risk score ?

@@ -35,14 +35,14 @@
 
 ### Différence synthétique RFQ vs RFS
 
-[Table]
+| Critère | RFQ | RFS |
+|---------|-----|-----|
+| Mode | Requête ponctuelle | Flux continu |
+| Vitesse | Plus lent | Plus rapide |
+| Taille | Block trades, grande taille | Taille standard |
+| Interaction | Bilatérale, plusieurs dealers | Clic sur stream |
+| Usage | Taux, crédit, dérivés OTC | FX, commodities liquides |
 
-  
-  
-  
-  
-  
-  
 ---
 
 ## AMM – Automated Market Maker

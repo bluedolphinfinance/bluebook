@@ -10,10 +10,14 @@ Maker naît entre 2015 et 2017 d’une idée radicale : créer une monnaie stab
   
 Dans cette vision, chaque élément du système reproduit une fonction clé des finances traditionnelles (TradFi) :
 
-  
-[Table]
+| TradFi | Maker |
+|--------|-------|
+| Banque centrale | Maker Protocol (gouvernance + smart contracts) |
+| Monnaie fiat | DAI (stablecoin) |
+| Taux directeur | Stability Fee |
+| Réserves obligatoires | Collateral Ratio |
+| Open Market Operations | DSR (DAI Savings Rate) |
 
-  
 Maker ambitionne d’être :
 
   
@@ -72,7 +76,12 @@ Exemple : tu déposes 150 $ d’ETH — tu crées 100 DAI. Le ratio est de 1
 Le DAI n’est donc pas “backé” 1:1 comme l’USDC : il est garanti par la valeur de collatéraux on-chain.
 
   
-[Table]
+| Paramètre | Description | Équivalent TradFi |
+|-----------|-------------|-------------------|
+| Stability Fee | Intérêt payé sur la dette DAI | Taux d'intérêt |
+| Liquidation Ratio | Seuil de liquidation (ex: 150%) | Appel de marge |
+| Debt Ceiling | Montant max de DAI émissible | Plafond d'endettement |
+| DSR | Rendement pour détenteurs de DAI | Rémunération des dépôts |
 
   
 Maker agit comme banque centrale : ces paramètres déterminent la "politique monétaire" de DAI.
