@@ -20,8 +20,7 @@
 
 ---
 
-<details>
-<summary>Pitch</summary>
+## Pitch
 
 Founded in 2019, Maple was built on the belief that capital markets should be more transparent, efficient, and accessible – and that lending, the foundation of finance, could evolve beyond legacy infrastructure and closed systems.
 
@@ -35,14 +34,9 @@ Where access is broader, trust is built-in, and capital moves with greater purpo
 
 **Maple is Asset Management. Onchain. And we're just getting started.**
 
-</details>
-
-<details>
-<summary>Ecosystem partner to dig</summary>
+## Ecosystem partner to dig
 
 🔗 https://maple.finance/about
-
-</details>
 
 ---
 

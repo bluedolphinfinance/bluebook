@@ -69,12 +69,45 @@
 
 **Analyste DeFi - Note :** JustLend est une "vache à lait" de rendement stable pour ceux déjà exposés à l'écosystème TRON, mais il présente un profil de risque de centralisation plus élevé que les protocoles modulaires comme Euler.
 
-<details>
-<summary>USDD</summary>
+## USDD
 
-*À documenter*
+Voici une analyse technique de l'**USDD** (Decentralized USD) structurée selon le modèle d'évaluation des protocoles de prêt et de stabilité (données actualisées en décembre 2025) :
 
-</details>
+### 1. Identité et Vision
+
+- **Maturité & Historique :** Lancé en mai 2022, l'USDD a opéré une transition critique d'un modèle algorithmique (similaire à l'UST) vers un modèle sur-collatéralisé suite aux turbulences de marché de 2022.
+- **Proposition de Valeur :** Fournir un stablecoin décentralisé à haut rendement au sein de l'écosystème TRON, soutenu par une réserve diversifiée d'actifs numériques.
+- **Nature du Produit :** Actif synthétique adossé à une réserve gérée par une DAO.
+
+### 2. Architecture Technique & Produit
+
+- **Mécanisme de Prêt :** Fonctionne via un système de sur-collatérallisation où l'émission est garantie par des actifs en réserve (BTC, TRX, USDT).
+- **Modularité & Gouvernance :** Les paramètres de risque et la gestion des réserves sont centralisés sous la supervision de la **TRON DAO Reserve**.
+- **Déploiement & Écosystème :** Principalement déployé sur TRON, avec des ponts vers Ethereum et BNB Chain.
+
+### 3. Métriques de Performance & Santé (Déc. 2025)
+
+| Métrique | Valeur | Tendance / Commentaire |
+|----------|--------|------------------------|
+| Offre en Circulation | ~$830 M | Stable, croissance limitée par la domination de l'USDT. |
+| Ratio de Collatéral | % | Ratio facial élevé, mais sensible à la volatilité du TRX. |
+| Revenus Protocolaires | | Principalement générés par le staking des réserves de BTC/TRX. |
+
+### 4. Analyse de la Valorisation & Tokenomics
+
+- **Mécanisme de Capture :** Le protocole génère de la valeur par le seigneuriage et le rendement des actifs placés en réserve.
+- **Stabilité du Peg :** Utilise un **PSM (Peg Stability Module)** permettant des échanges à frais réduits pour maintenir la parité 1:1 avec le dollar.
+
+### 5. Matrice des Risques (Risk Vector Analysis)
+
+- **Risque de Crédit :** Dépendance à la qualité des actifs de réserve. Un risque de "circularité" existe si une trop grande partie du collatéral est composée de TRX.
+- **Risque de Smart Contract :** Architecture moins modulaire que les protocoles de prêt de nouvelle génération, avec une dépendance aux contrats de la TRON DAO.
+- **Risque de Corrélation :** Forte exposition systémique à la santé financière de l'écosystème TRON et de ses fondateurs.
+- **Risque de Liquidité :** Profondeur de liquidité sur les plateformes secondaires (DEX) parfois insuffisante pour absorber des sorties massives sans déviation du peg.
+
+---
+
+**Zones d'Ombre :** La transparence totale sur la disponibilité immédiate de certaines réserves (notamment les BTC stakés) reste un point de vigilance pour les audits.
 
 ---
 
