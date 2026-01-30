@@ -65,7 +65,8 @@
   - les détenteurs de MKR/SKY via burn / buyback
 
   Spark est donc une **extension du P&L de Maker**.
-- **Lecture financière :** Spark = desk de transformation de maturité et de risque on-chain.
+- **Lecture financière :** Spark =
+  > un centre de profit relativement stable, peu risqué, augmentant la duration et la visibilité des cash-flows Maker.
 
 ## 5. Matrice des Risques (Risk Vector Analysis)
 
