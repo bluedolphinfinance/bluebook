@@ -2,7 +2,10 @@
 
 ## Cours Sébastien Choukroun
 
-*Fichiers joints disponibles dans Notion*
+📎 **Fichiers joints :**
+- [Cours1_Bitcoin.pdf](./files/Cours1_Bitcoin.pdf)
+- [Cours2_Ethereum_tokens_DeFi.pdf](./files/Cours2_Ethereum_tokens_DeFi.pdf)
+- [Cours3_Forks.pdf](./files/Cours3_Forks.pdf)
 
 ### Cours en présentiel 15-12-25
 

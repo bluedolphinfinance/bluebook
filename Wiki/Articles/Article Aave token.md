@@ -12,26 +12,26 @@ L'article aborde la distinction entre **tokens de gouvernance/utilité** et **Eq
 
 ### Points clés
 
-1. Conflit entre Aave Labs et la DAO
+1. **Conflit entre Aave Labs et la DAO**
   
 - Aave Labs possède le domaine, le frontend et la marque Aave.
   
 - La DAO et les détenteurs d’AAVE gouvernent le protocole mais n’ont pas de contrôle direct sur ces actifs.
   
 - Aave Labs a redirigé les revenus du frontend (~10 M$/an) vers eux-mêmes via l’intégration avec CowSwap, au lieu de les reverser à la DAO (anciennement 2,7 M$ étaient versés à la DAO).
-1. Problème de propriété
+2. **Problème de propriété**
   
 - Les détenteurs de tokens AAVE n’ont jamais reçu d’équity dans Aave Labs.
   
 - L’ICO initial de LENDETH (devenu AAVE) promettait des avantages d’utilité, pas d’actions ou de droits sur la propriété intellectuelle.
   
 - Les droits sur le domaine, la marque et le code appartiennent légalement à Aave Labs ou ses entités affiliées.
-1. Risques pour les détenteurs de tokens
+3. **Risques pour les détenteurs de tokens**
   
 - Sans un accord clair entre Labs et DAO, la DAO pourrait être exclue si le contrôle des actifs passe à un tiers (banque, institution…).
   
 - La valeur du token AAVE pourrait chuter si les actifs critiques sont détournés du protocole.
-1. Solutions envisagées
+4. **Solutions envisagées**
   
 - La DAO pourrait obtenir le transfert de la propriété intellectuelle vers une fondation contrôlée par la DAO.
   
@@ -42,7 +42,7 @@ L'article aborde la distinction entre **tokens de gouvernance/utilité** et **Eq
 - Contrôle neutre des comptes et canaux de communication officiels.(Twitter)
   
 - Si Labs refuse, la DAO pourrait financer des frontends alternatifs pour protéger l’usage du protocole.
-1. Arguments juridiques possibles pour la DAO
+5. **Arguments juridiques possibles pour la DAO**
   
 - Trust constructif : les actifs ont été acquis pour le bénéfice du protocole/DAO, pas uniquement pour Labs.
   
