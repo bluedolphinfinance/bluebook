@@ -18,7 +18,7 @@ nouveauté pour moi (Gauntlet fait du protocol advisory)
 
 ils font de la "Applied Research" protocol economics - incentive design
 
-Transparency
+**Transparency**
 
 **BD Action:**
 (réfléchir a un systeme d'alerte pour identifier les token en cours de whitelisting/offlisting pour chaque vault) (est ce récuperables via RPC ou API Morpho)

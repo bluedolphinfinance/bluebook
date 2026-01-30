@@ -6,7 +6,7 @@
 
 ### Contexte général
 
-L’article aborde la distinction entre tokens de gouvernance/utilité et Equity dans les protocoles DeFi, en utilisant Aave comme exemple concret. Il met en lumière les conflits potentiels entre les détenteurs de tokens et les entités privées (Labs) qui contrôlent les actifs clés du protocole.
+L'article aborde la distinction entre **tokens de gouvernance/utilité** et **Equity** dans les protocoles DeFi, en utilisant **Aave** comme exemple concret. Il met en lumière les conflits potentiels entre les détenteurs de tokens et les entités privées (Labs) qui contrôlent les actifs clés du protocole.
 
 ---
 
@@ -53,7 +53,7 @@ L’article aborde la distinction entre tokens de gouvernance/utilité et Equity
 
 ### Conclusion
 
-L’article montre que la séparation entre tokens et equity peut créer des conflits majeurs dans la DeFi. Les détenteurs de tokens doivent comprendre que posséder un token ne garantit pas de droits sur les actifs ou la propriété intellectuelle. L’affaire Aave pourrait servir de précédent juridique et économique pour l’ensemble de l’écosystème DeFi.
+L'article montre que la séparation entre **tokens et equity** peut créer des conflits majeurs dans la DeFi. Les détenteurs de tokens doivent comprendre que posséder un token ne garantit pas de droits sur les actifs ou la propriété intellectuelle. L'affaire Aave pourrait servir de **précédent juridique et économique** pour l'ensemble de l'écosystème DeFi.
 
 ---
 
@@ -115,7 +115,7 @@ L’article montre que la séparation entre tokens et equity peut créer des con
 ---
 
   
-En résumé : Labs fournit l’expertise et construit le protocole, la DAO gouverne le protocole et ses revenus, et la Fondation peut servir de pont neutre pour protéger les intérêts des détenteurs de tokens. L’alignement entre ces trois entités est crucial pour la durabilité et la valeur du token.
+En résumé : **Labs fournit l'expertise et construit le protocole, la DAO gouverne le protocole et ses revenus, et la Fondation peut servir de pont neutre pour protéger les intérêts des détenteurs de tokens.** L’alignement entre ces trois entités est crucial pour la durabilité et la valeur du token.
 
   
 ---
