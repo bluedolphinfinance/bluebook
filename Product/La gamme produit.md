@@ -1,6 +1,6 @@
 # La gamme produit
 
-Description
+**Description**
 
 Description de la gamme produit
 

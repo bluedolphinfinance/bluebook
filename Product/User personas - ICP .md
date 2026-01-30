@@ -1,6 +1,6 @@
-# User personas / ICP 
+# User personas / ICP
 
-Description
+**Description**
 
 Profils détaillés des clients cibles (Retail/Instit/PB/UHNI). 
 

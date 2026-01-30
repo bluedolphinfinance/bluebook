@@ -28,7 +28,7 @@ L'architecture de Pendle repose sur trois composants essentiels :
 
 ### 2.1 Standardized Yield (SY) Tokens
 
-Fonction du SY Token :
+**Fonction du SY Token :**
 
 - Wrapper unifié : enveloppe standardisée pour tous types d'actifs productifs
 - Abstraction des mécanismes : simplifie trois types de génération de rendement
@@ -38,7 +38,7 @@ Fonction du SY Token :
 - Accumulate tokens (cTokens de Compound) : où le taux de change augmente
   
 - Distribute tokens (tokens générant des récompenses externes)
-Exemple :
+**Exemple :**
 
 ETH ⇒ stETH (Lido) ⇒ SY-wstETH (Pendle)
 
@@ -50,13 +50,13 @@ Le SY token capture automatiquement le rendement natif de l'actif sous-jacent, q
 
 Le Principal Token représente la portion principale d'un actif productif de rendement après séparation du rendement.
 
-Caractéristiques du PT :
+**Caractéristiques du PT :**
 
 - Valeur : se négocie à décote avant maturité
 - Convergence à la parité : prix ⇒ valeur sous-jacente quand maturité approche
 - Rachat à maturité : échangeable 1:1 contre l'actif comptable
 - Équivalent TradFi : obligation zéro-coupon
-Exemple de prix :
+**Exemple de prix :**
 
 Si PT-wstETH (maturité 1 an) se traite à 0.95 ETH
 
@@ -66,13 +66,13 @@ Rendement fixe implicite = (1 - 0.95) / 0.95 ~ 5.26% APY
 
 Le Yield Token représente la composante de rendement d'un actif sous-jacent productif. En détenant des YT, le rendement de l'actif sous-jacent est distribué aux utilisateurs jusqu'à maturité.
 
-Propriétés du YT :
+**Propriétés du YT :**
 
 - Décroissance temporelle : valeur ⇒ 0 à l'approche de la maturité
 - Capture du rendement : accumule tous les gains jusqu'à expiration
 - Effet de levier : exposition au rendement sans capital principal total
 - Distribution continue : rendement récupérable à tout moment
-Mécanique :
+**Mécanique :**
 
 Achat de 10 YT-wstETH à 0.05 ETH (total : 0.5 ETH, APY estimé 5% à l’achat)
 
@@ -86,7 +86,7 @@ Profit net = 0.6 (yield perçu) - 0.5 (coût des YT) = 0.10 ETH (gain de 20% sur
 
 La somme en valeur dollar du PT et du YT doit être égale à l'actif sous-jacent car ce sont des parties individuelles d'un tout.
 
-Invariant mathématique :
+**Invariant mathématique :**
 
 Valeur(SY) = Valeur(PT) + Valeur(YT)
 
@@ -108,11 +108,11 @@ On retrouve des concepts assez classiques de la finance traditionnelle rendus po
 
 Ce que fait Pendle est similaire au bond stripping en finance traditionnelle, où le principal et les intérêts des obligations sont séparés.
 
-STRIPS (Separate Trading of Registered Interest and Principal Securities) :
+**STRIPS (Separate Trading of Registered Interest and Principal Securities) :**
 
 Aux États-Unis, l'idée des STRIPS est que le principal et chaque paiement d'intérêt deviennent des titres séparés qui sont traités individuellement. Chaque flux séparé est un titre zéro-coupon qui arrive à maturité séparément.
 
-Exemple :
+**Exemple :**
 
 Obligation US Treasury 10 ans, nominal $100,000, coupon 5%
 
@@ -122,13 +122,13 @@ Obligation US Treasury 10 ans, nominal $100,000, coupon 5%
 - 1 paiement principal ($100,000 à maturité) 
 Chaque titre se négocie séparément comme un zéro-coupon
 
-Parallèle Pendle :
+**Parallèle Pendle :**
 
 100 wstETH (rendement 5%) 
 
 ⇒ 100 PT-wstETH (principal) + 100 YT-wstETH (rendements futurs)
 
-Caractéristiques communes :
+**Caractéristiques communes :**
 
 - Zero-coupon bonds = PT
   
@@ -162,7 +162,7 @@ Les PT, comme les zéro-coupons, ont une duration maximale pour leur maturité, 
 
 Pendle crée un marché pour les dérivés de taux d'intérêt similaire aux IRS traditionnels.
 
-IRS traditionnel :
+**IRS traditionnel :**
 
 A : paie taux fixe 3%
 
@@ -172,7 +172,7 @@ Sur notionnel $10M, échanges trimestriels, durée 5 ans
 
 But : transformer exposition taux variable ↔ taux fixe
 
-Équivalent Pendle :
+**Équivalent Pendle :**
 
 A : achète PT (verrouille le rendement fixe)
 
@@ -192,7 +192,7 @@ B a acheté exposition au rendement variable
 
 En TradFi, la courbe des taux montre le rendement des obligations selon leur maturité.
 
-Courbe des taux USD :
+**Courbe des taux USD :**
 
 | Maturité | Yield |
 |----------|-------|
@@ -201,5 +201,5 @@ Courbe des taux USD :
 | 5y | 3.71% |
 | 10y | 4.17% |
 
-Sur Pendle, différents pools PT avec maturités distinctes :
+**Sur Pendle, différents pools PT avec maturités distinctes :**
 
