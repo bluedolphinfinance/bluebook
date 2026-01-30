@@ -54,18 +54,25 @@ Where access is broader, trust is built-in, and capital moves with greater purpo
 
 - **Porte d'entrée :** Stablecoins générateurs de rendement (**syrupUSDT** et **syrupUSDC**).
 - **Composition du capital (Allocation Déc. 2025) :**
+  - **63% :** Prêts institutionnels sur-collatéralisés (Taux fixe). (collat ratio 141,4%)
+  - **37% :** Stratégies de liquidité DeFi (Aave, Kamino, Sky (ex-Maker)).
 - **Déploiement :** Partenariat technologique majeur avec Aave pour la gestion des liquidités. existe aussi su Kamino.
 - **Accessibilité :** Existence de **Permissioned Pools** (KYC) pour les gros flux institutionnels.
 
 **3. Métriques de Performance & Valorisation**
 
 - **Santé financière :**
+  - **TVL : 2,78 Md$** (Croissance fulgurante de +836% en 1 an).
+  - **Activité :** 1,4 Md$ en Borrow.
 - **Économie du protocole :**
+  - **Fees YTD :** 120 M$.
+  - **Earnings (Revenus nets) :** 11,5 M$.
 
 **4. Tokenomics et Capture de Valeur**
 
 - **Rôle du token :** **SYRUP** (issu de l'évolution du MPL).
 - **Capture de valeur :** Mécanisme **MIP-019** (Buy-back).
+  - **Holder Revenue : 2,89 M$** (soit précisément 25% des revenus du protocole).
 
 **5. Points de Vigilance et "Zones d'Ombre"**
 
