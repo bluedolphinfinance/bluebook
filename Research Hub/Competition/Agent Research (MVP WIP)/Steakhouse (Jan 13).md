@@ -13,8 +13,9 @@ Revue le 13-01-26
 **(2)** Competitive position - les taux ne semblent pas à jour
 
 **(3)** **"All Documented Vaults" → Non, ce ne sont que les vaults Mainnet et Base (pas ARB d'ailleurs où les PFees sont à zéro). Le plus gros fonds a un perf fees à 25% non mentionné dans le GitHub**
-- 🔗 https://app.morpho.org/ethereum/curator/steakhouse-financial
-- Par ailleurs dans "product vault", l'adresse des vaults mentionnés n'est pas fournie (malgré ma demande précédente)
+
+🔗 https://app.morpho.org/ethereum/curator/steakhouse-financial
+Par ailleurs dans "product vault", l'adresse des vaults mentionnés n'est pas fournie (malgré ma demande précédente)
 
 ---
 
