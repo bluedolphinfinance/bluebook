@@ -39,12 +39,12 @@ En **DeFi**, le **reserve factor** est un **paramètre de risque** qui détermin
 
 Le reserve factor fixe le pourcentage alloué aux **réserves**.
 
-**Rôles principaux :**
+**Rôles principaux**
 - Sécurité : constitution d'un buffer contre les pertes (liquidations insuffisantes, bad debt)
 - Durabilité : financement de la maintenance, audits, développement
 - Gouvernance : parfois redistribué via staking ou trésorerie DAO
 
-**Effet économique :**
+**Effet économique**
 - Plus le reserve factor est élevé → rendement LP plus faible, protocole plus robuste
 - Plus il est faible → rendement LP plus élevé, mais moins de protection
 
