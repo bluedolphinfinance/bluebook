@@ -60,7 +60,11 @@
 ## 4. Analyse de la Valorisation & Tokenomics
 
 - **Token natif :** ❌ **Pas de token Spark autonome** (SPK ne vaut pas ce que Spark gagne, il vaut ce que Spark pourrait devenir). ✅ Capture de valeur indirecte via **MKR / SKY**.
-- **Mécanisme de Capture de Valeur :** Les intérêts payés par les borrowers reviennent in fine à Maker. Spark est donc une **extension du P&L de Maker**.
+- **Mécanisme de Capture de Valeur :** Les intérêts payés par les borrowers reviennent in fine à :
+  - la trésorerie Maker
+  - les détenteurs de MKR/SKY via burn / buyback
+
+  Spark est donc une **extension du P&L de Maker**.
 - **Lecture financière :** Spark = desk de transformation de maturité et de risque on-chain.
 
 ## 5. Matrice des Risques (Risk Vector Analysis)
