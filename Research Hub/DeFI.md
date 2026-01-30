@@ -6,7 +6,7 @@
 
 | Protocole | Token | TVL ($B) | MCap ($M) | Type | Category | Chain |
 |-----------|-------|----------|-----------|------|----------|-------|
-| [**Aave**](./Protocols/Aave.md) | AAVE | 33.2 | 2050 | Lending/Borrowing | SBM Infrastructure | Multi-chain |
+| [**Aave**](./Protocols/Aave.md) | AAVE | 33.2 | 2,050 | Lending/Borrowing | SBM Infrastructure | Multi-chain |
 | [**Morpho**](./Protocols/Morpho.md) | MORPHO | 5.6 | 538 | Lending/Borrowing | Vault Infrastructure | Multi-chain |
 | [**Lido**](./Protocols/Lido.md) | LDO | 25.9 | 430 | Staking | LST | Ethereum |
 | [**justLend**](./Protocols/justLend.md) | JUST | 3.8 | 340 | Lending/Borrowing | SBM Infrastructure | Tron |
