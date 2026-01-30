@@ -203,3 +203,285 @@ En TradFi, la courbe des taux montre le rendement des obligations selon leur mat
 
 **Sur Pendle, différents pools PT avec maturités distinctes :**
 
+| PT | Yield |
+|----|-------|
+| PT-USDe 23 days | 4.84% |
+| PT-USDe 44 days | 4.98% |
+| PT-USDe 107 days | 5.53% |
+
+Cette structure permet :
+
+- Arbitrage de courbe
+- Gestion de duration
+- Anticipation des taux
+
+### 3.5 Produit structuré
+
+On peut créer des produits structurés combinant PT et YT.
+
+**Produit structuré TradFi à capital garanti :**
+
+Investissement : $100,000
+
+Allocation :
+
+- $95,000 ⇒ obligation zéro-coupon 1Y 5% (principal garanti)
+- $5,000 ⇒ options sur actions (upside potentiel)
+
+Payoff à maturité :
+
+- Minimum : $100,000 (protection principal)
+- Maximum : $100,000 + gains options
+
+**Produit structuré Pendle :**
+
+100 ETH disponibles
+
+Stratégie "protected upside" :
+
+- Acheter 100 PT-wstETH pour 95 ETH (protège 100 ETH à maturité)
+- Utiliser 5 ETH pour acheter YT-wstETH (exposition à levier sur le rendement)
+
+Payoff :
+
+- Minimum : 100 ETH garantis à maturité
+- Maximum : 100 ETH + tous les rendements accumulés via YT (long yield)
+
+# 4. Cas d'usage et Stratégies
+
+### 4.1 Long Yield - pari directionnel sur le rendement
+
+Profiter d'une hausse du rendement.
+
+**Mise en œuvre :**
+
+- Achat de YT
+- Pas d'exposition directe au principal
+
+**Mécanisme économique :**
+
+Le YT concentre toute l'exposition au rendement. Il agit comme un dérivé de taux.
+
+**Exemple :**
+
+- YT-wstETH acheté à 0.05 ETH
+- Rendement anticipé : 5%
+- Rendement réalisé : 7%
+
+→ Le surplus de rendement (2%) est intégralement capturé par le YT
+
+**Risques :**
+
+- Rendement inférieur aux attentes
+- Time decay (θ négatif)
+- Valeur → 0 à maturité
+
+### 4.2 Yield Hedging - couverture du rendement
+
+*Conditions initiales : LP détient l'actif*
+
+Se protéger contre une baisse du rendement futur.
+
+**Mise en œuvre :**
+
+- Détenir le sous-jacent (stETH, USDe, aUSDC…)
+
+**Résultat :**
+
+- Rendement variable transformé en rendement fixe
+- Neutralisation de la volatilité du yield
+
+**Équivalent TradFi :**
+
+Swap taux variable → taux fixe (IRS)
+
+### 4.3 Fixed Income / Lock de rendement
+
+*Conditions initiales : LP détient du cash*
+
+Obtenir un rendement fixe garanti.
+
+**Mise en œuvre :**
+
+- Achat direct de PT
+- Carry jusqu'à maturité
+
+**Exemple :**
+
+PT-USDe à 0.94 (maturité 6 mois)
+
+→ Récupération de 1 USDe à maturité
+
+→ Rendement annualisé déterministe
+
+### 4.4 Arbitrage PT ↔ sous-jacent
+
+Exploiter les inefficiences de prix entre :
+
+- PT
+- SY
+- sous-jacent spot
+
+**Arbitrage classique :**
+
+Si PT + YT ≠ SY → arbitrage immédiat possible
+
+**Arbitrage de convergence :**
+
+- Achat PT décoté
+- Attente maturité
+- Conversion 1:1
+
+### 4.5 Yield curve trading
+
+Pendle permet une gestion de courbe de taux.
+
+**Exemples :**
+
+- Long PT court terme / short PT long terme
+- Exploiter une courbe inversée
+- Positionnement macro sur baisse ou hausse de rendement
+
+→ Approche très proche des desks taux en TradFi
+
+# 5. AMM
+
+Pendle n'utilise pas un AMM constant-product classique (x*y = k).
+
+### 5.1 Problème des AMM classiques
+
+Les AMM type Uniswap sont inadaptés car :
+
+- Les YT ont une décroissance temporelle
+- Leur valeur tend vers 0 à maturité
+- La fonction de prix doit intégrer le temps
+
+Un AMM standard ne fonctionne pas par construction à maturité.
+
+### 5.2 AMM à maturité (Time-decay aware)
+
+Pendle utilise un AMM spécialisé avec :
+
+- Une fonction de pricing asymétrique
+- Un facteur temps explicite
+- Une convergence forcée des prix
+
+À maturité :
+
+- Prix(YT) → 0
+- Prix(PT) → valeur sous-jacente
+
+Sans dépendre d'un oracle externe.
+
+### 5.3 Rôle de l'arbitrage
+
+L'AMM n'impose pas la parité seul.
+
+Elle est maintenue par :
+
+- Arbitragistes
+- Liquidité concentrée (plages de prix)
+
+Si PT + YT ≠ SY → opportunité de profit immédiate → retour à l'invariant
+
+### 5.4 Liquidité et incentives
+
+Les LP fournissent de la liquidité sur :
+
+- PT ↔ SY
+- YT ↔ SY
+
+Ils gagnent :
+
+- Frais de trading
+- Incentives en PENDLE
+- Boosts via vePENDLE
+
+**Risques :** Le LPing sur YT est complexe : exposition au time decay + yield realized
+
+# 6. Tokenomics - Gouvernance
+
+Le token PENDLE gouverne le protocole.
+
+### 6.1 PENDLE token
+
+**Fonctions principales :**
+
+- Gouvernance
+- Incentives LP
+- Boost de rendement
+
+Pas un token de yield direct. Le rendement vient du protocole.
+
+### 6.2 vePENDLE (vote-escrow)
+
+Inspiré de Curve / Convex.
+
+**Fonctionnement :**
+
+- Lock PENDLE (jusqu'à 2 ans)
+- Réception de vePENDLE non transférable
+
+**Avantages :**
+
+- Boost des rewards LP
+- Part des fees du protocole
+- Pouvoir de vote sur l'allocation des incentives
+
+### 6.3 "Flywheel" économique
+
+- Pendle liste de nouveaux actifs à yield attractif
+- Les rendements attirent traders, LP et stratégies quant
+- Plus de volume → plus de fees
+- Les fees vont aux détenteurs de vePENDLE
+- Pour capter ces fees, les utilisateurs lockent PENDLE
+- Le lock réduit l'offre liquide
+- Moins d'offre liquide + plus de demande stratégique
+- Valeur du PENDLE ↑
+- Le protocole devient encore plus attractif
+
+Process "déflationniste" et "sticky" car sortir de vePENDLE coûte quelque chose
+
+**Pour un LP :**
+
+- Perte du boost
+- Baisse du rendement
+- Désavantage compétitif
+
+**Pour un protocole tiers :**
+
+- Perte d'influence sur l'allocation d'incentives
+- Perte de liquidité
+
+**Pour un investisseur long terme :**
+
+- vePENDLE est non transférable
+- le unlock est lent
+- la sortie est coûteuse
+
+### 6.4 Gouvernance
+
+Les détenteurs de vePENDLE votent sur :
+
+- Allocation des incentives par pool
+- Paramètres AMM
+- Intégration de nouveaux assets
+- Évolutions du protocole
+
+Favorise les acteurs long terme
+
+# 7. Risques
+
+- Risque de smart contract (Pendle + underlying)
+- Risque d'oracle
+- Risque de depeg
+- Risque de yield plus faible que prévu si détenteur du YT
+- Liquidité des pools
+- Complexité mal maîtrisée
+
+# 8. Docs et liens
+
+🔗 https://docs.pendle.finance/
+
+🔗 https://defillama.com/protocol/pendle
+
