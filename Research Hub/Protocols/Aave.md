@@ -18,11 +18,13 @@
 | **Audit Status** | NR |
 | **Links** | https://aave.com/ |
 
+---
+
 ## Analyse
 
-### V4 à venir
+une V4 est attendue (Dec 25 probablement Q1 2026)
 
-Aave V4 est attendu pour Q1 2026. Il devrait introduire un concept de "vault" permettant une meilleure gestion des positions.
+dans la V4, la notion de vault pourrait être introduite
 
 ---
 
