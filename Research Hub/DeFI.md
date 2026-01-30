@@ -4,16 +4,16 @@
 
 ## DeFi Protocols
 
-| Protocole | Category | Chain | TVL ($B) | Risk | Token |
-|-----------|----------|-------|----------|------|-------|
-| **Aave** | SBM Infrastructure | Ethereum, Base, Arbitrum, +18 | 33.2 | Tier I | AAVE |
-| **Lido** | LST | Ethereum | 25.9 | - | LDO |
-| **Morpho** | Vault Infrastructure | Ethereum, Base, Polygon, +7 | 5.6 | - | MORPHO |
-| **justLend** | SBM Infrastructure | Tron | 3.8 | - | JUST |
-| **Sparklend** | Onchain AM | Ethereum, Gnosis | 3.6 | - | SPK |
-| **Maple** | Onchain AM | Ethereum | 2.6 | Tier II | SYRUP |
-| **Kamino** | - | Solana | 2.4 | - | KMNO |
-| **Euler** | Vault Infrastructure | Ethereum, BNB, +12 | 1.0 | Tier II | EUL |
+| Protocole | Category | Chain | TVL ($B) | Type | Token | MCap ($M) | Risk | BD Interest | Yield | Audit |
+|-----------|----------|-------|----------|------|-------|-----------|------|-------------|-------|-------|
+| [**Aave**](./Protocols/Aave.md) | SBM Infrastructure | Multi-chain | 33.2 | Lending/Borrowing | AAVE | 2050 | Tier I | Low | Overcollateralized | NR |
+| [**Morpho**](./Protocols/Morpho.md) | Vault Infrastructure | Multi-chain | 5.6 | Lending/Borrowing | MORPHO | 538 | - | High | Overcollateralized | NR |
+| [**Lido**](./Protocols/Lido.md) | LST | Ethereum | 25.9 | Staking | LDO | 430 | - | Low | PoS | NR |
+| [**justLend**](./Protocols/justLend.md) | SBM Infrastructure | Tron | 3.8 | Lending/Borrowing | JUST | 340 | - | Low | Overcollateralized | NR |
+| [**Maple**](./Protocols/Maple.md) | Onchain AM | Ethereum | 2.6 | KYC Borrowing | SYRUP | 383 | Tier II | Low | Overcollateralized, Platforms | Audited |
+| [**Sparklend**](./Protocols/Sparklend.md) | Onchain AM | Ethereum, Gnosis | 3.6 | Lending/Borrowing | SPK | 44 | - | Medium | Overcollateralized | NR |
+| [**Kamino**](./Protocols/Kamino.md) | - | Solana | 2.4 | Lending/Borrowing | KMNO | 270 | - | High | Overcollateralized | NR |
+| [**Euler**](./Protocols/Euler.md) | Vault Infrastructure | Multi-chain | 1.0 | Lending/Borrowing | EUL | 56 | Tier II | Medium | Overcollateralized | NR |
 
 ---
 
