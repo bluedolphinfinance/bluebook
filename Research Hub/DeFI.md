@@ -4,16 +4,16 @@
 
 ## DeFi Protocols
 
-| Protocole | Category | Chain | TVL ($B) | Type | Token | MCap ($M) | Risk | BD Interest | Yield | Audit |
-|-----------|----------|-------|----------|------|-------|-----------|------|-------------|-------|-------|
-| [**Aave**](./Protocols/Aave.md) | SBM Infrastructure | Multi-chain | 33.2 | Lending/Borrowing | AAVE | 2050 | Tier I | Low | Overcollateralized | NR |
-| [**Morpho**](./Protocols/Morpho.md) | Vault Infrastructure | Multi-chain | 5.6 | Lending/Borrowing | MORPHO | 538 | - | High | Overcollateralized | NR |
-| [**Lido**](./Protocols/Lido.md) | LST | Ethereum | 25.9 | Staking | LDO | 430 | - | Low | PoS | NR |
-| [**justLend**](./Protocols/justLend.md) | SBM Infrastructure | Tron | 3.8 | Lending/Borrowing | JUST | 340 | - | Low | Overcollateralized | NR |
-| [**Maple**](./Protocols/Maple.md) | Onchain AM | Ethereum | 2.6 | KYC Borrowing | SYRUP | 383 | Tier II | Low | Overcollateralized, Platforms | Audited |
-| [**Sparklend**](./Protocols/Sparklend.md) | Onchain AM | Ethereum, Gnosis | 3.6 | Lending/Borrowing | SPK | 44 | - | Medium | Overcollateralized | NR |
-| [**Kamino**](./Protocols/Kamino.md) | - | Solana | 2.4 | Lending/Borrowing | KMNO | 270 | - | High | Overcollateralized | NR |
-| [**Euler**](./Protocols/Euler.md) | Vault Infrastructure | Multi-chain | 1.0 | Lending/Borrowing | EUL | 56 | Tier II | Medium | Overcollateralized | NR |
+| Protocole | Token | TVL ($B) | MCap ($M) | Type | Category | Chain |
+|-----------|-------|----------|-----------|------|----------|-------|
+| [**Aave**](./Protocols/Aave.md) | AAVE | 33.2 | 2050 | Lending/Borrowing | SBM Infrastructure | Multi-chain |
+| [**Morpho**](./Protocols/Morpho.md) | MORPHO | 5.6 | 538 | Lending/Borrowing | Vault Infrastructure | Multi-chain |
+| [**Lido**](./Protocols/Lido.md) | LDO | 25.9 | 430 | Staking | LST | Ethereum |
+| [**justLend**](./Protocols/justLend.md) | JUST | 3.8 | 340 | Lending/Borrowing | SBM Infrastructure | Tron |
+| [**Maple**](./Protocols/Maple.md) | SYRUP | 2.6 | 383 | KYC Borrowing | Onchain AM | Ethereum |
+| [**Sparklend**](./Protocols/Sparklend.md) | SPK | 3.6 | 44 | Lending/Borrowing | Onchain AM | Ethereum, Gnosis |
+| [**Kamino**](./Protocols/Kamino.md) | KMNO | 2.4 | 270 | Lending/Borrowing | - | Solana |
+| [**Euler**](./Protocols/Euler.md) | EUL | 1.0 | 56 | Lending/Borrowing | Vault Infrastructure | Multi-chain |
 
 ---
 
