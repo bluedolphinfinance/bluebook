@@ -1,5 +1,7 @@
 # 💡 Agent Research (MVP WIP)
 
+Feedback sur les exports .md sur github du multi-agent Research développé par CD.
+
 ## Pages
 
 - 📄 [Gauntlet Revue](./Gauntlet%20Revue.md)
