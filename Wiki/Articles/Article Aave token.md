@@ -66,11 +66,11 @@ L'article montre que la séparation entre **tokens et equity** peut créer des c
 ### 1. Structure et rôles
 
   
-- Labs : Entité privée qui développe le protocole, maintient le frontend (site, application), et possède certains actifs intangibles (trademarks, IP du frontend, domaine). Labs peut générer des revenus directement via ces actifs.
+- **Labs** : Entité privée qui développe le protocole, maintient le frontend (site, application), et possède certains actifs intangibles (trademarks, IP du frontend, domaine). Labs peut générer des revenus directement via ces actifs.
   
-- DAO (Decentralized Autonomous Organization) : Organe décentralisé gouverné par les détenteurs de tokens (AAVE dans le cas d’Aave). La DAO gère les paramètres du protocole, reçoit une partie des revenus du protocole et prend des décisions sur l’évolution du protocole.
+- **DAO (Decentralized Autonomous Organization)** : Organe décentralisé gouverné par les détenteurs de tokens (AAVE dans le cas d'Aave). La DAO gère les paramètres du protocole, reçoit une partie des revenus du protocole et prend des décisions sur l'évolution du protocole.
   
-- Foundation / Fondation : Souvent créée pour centraliser la propriété intellectuelle et certains actifs de manière neutre, afin de protéger les intérêts des détenteurs de tokens et d’assurer un alignement durable entre Labs et DAO.
+- **Foundation / Fondation** : Souvent créée pour centraliser la propriété intellectuelle et certains actifs de manière neutre, afin de protéger les intérêts des détenteurs de tokens et d'assurer un alignement durable entre Labs et DAO.
   
 ---
 
@@ -78,11 +78,11 @@ L'article montre que la séparation entre **tokens et equity** peut créer des c
 ### 2. Conflits potentiels
 
   
-- Labs peut monétiser directement les actifs (comme le site web) pour son propre profit, ce qui peut entrer en conflit avec les intérêts économiques des token holders de la DAO.
+- Labs peut **monétiser directement les actifs** (comme le site web) pour son propre profit, ce qui peut entrer en conflit avec les intérêts économiques des token holders de la DAO.
   
-- Les détenteurs de tokens n’ont souvent aucun droit légal sur l’IP ou le domaine, même si le succès du protocole repose sur ces actifs.
+- Les détenteurs de tokens n'ont souvent **aucun droit légal sur l'IP ou le domaine**, même si le succès du protocole repose sur ces actifs.
   
-- Les utilisateurs et la DAO peuvent se retrouver structuralement désavantagés, par exemple si un Labs privé est vendu ou acquis par un acteur externe qui contrôle le frontend et l’IP.
+- Les utilisateurs et la DAO peuvent se retrouver **structuralement désavantagés**, par exemple si un Labs privé est vendu ou acquis par un acteur externe qui contrôle le frontend et l'IP.
   
 ---
 
@@ -90,11 +90,11 @@ L'article montre que la séparation entre **tokens et equity** peut créer des c
 ### 3. Risques pour les token holders
 
   
-- Si la DAO ne contrôle pas les actifs stratégiques, elle peut perdre son pouvoir sur la distribution des revenus, rendant les tokens moins précieux.
+- Si la DAO ne contrôle pas les actifs stratégiques, elle peut **perdre son pouvoir sur la distribution des revenus**, rendant les tokens moins précieux.
   
-- Un acquéreur externe pourrait forker le protocole et capter les revenus, laissant les tokens existants obsolètes.
+- Un acquéreur externe pourrait **forker le protocole** et capter les revenus, laissant les tokens existants obsolètes.
   
-- L’absence d’un accord légal contraignant entre Labs et DAO crée de l’incertitude sur le long terme.
+- L'absence d'un **accord légal contraignant entre Labs et DAO** crée de l'incertitude sur le long terme.
   
 ---
 
@@ -102,15 +102,15 @@ L'article montre que la séparation entre **tokens et equity** peut créer des c
 ### 4. Solutions possibles
 
   
-- Transfert ou partage d’IP vers une fondation DAO-friendly pour sécuriser les actifs stratégiques.
+- **Transfert ou partage d'IP** vers une fondation DAO-friendly pour sécuriser les actifs stratégiques.
   
-- Accords de revenue sharing transparents entre Labs et DAO.
+- **Accords de revenue sharing** transparents entre Labs et DAO.
   
-- Contrôle neutre des canaux de communication et du domaine pour éviter que Labs favorise ses propres initiatives.
+- **Contrôle neutre des canaux de communication** et du domaine pour éviter que Labs favorise ses propres initiatives.
   
-- Neutralisation de conflits futurs, par exemple droit de préemption sur une vente d’IP ou de Labs.
+- **Neutralisation de conflits futurs**, par exemple droit de préemption sur une vente d'IP ou de Labs.
   
-- En cas de refus de Labs, la DAO peut soutenir des frontends alternatifs, créant ainsi une pression économique sans recours direct à la justice.
+- En cas de refus de Labs, la DAO peut **soutenir des frontends alternatifs**, créant ainsi une pression économique sans recours direct à la justice.
   
 ---
 
