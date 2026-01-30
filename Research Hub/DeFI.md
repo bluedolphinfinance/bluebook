@@ -19,9 +19,9 @@
 
 ## Laïus
 
-L'essentiel de la finance décentralisée (DeFi) s'est historiquement structuré et demeure aujourd'hui concentré sur Ethereum (mainnet) et son écosystème de solutions de couche 2 (L2).
+L'essentiel de la **finance décentralisée (DeFi)** s'est historiquement structuré et demeure aujourd'hui concentré sur **Ethereum** (mainnet) et son écosystème de **solutions de couche 2 (L2)**.
 
-Ethereum a été la première blockchain à offrir un environnement de smart contracts suffisamment expressif, sécurisé et standardisé pour permettre l'émergence de protocoles financiers complexes (DEX, lending, dérivés, stablecoins).
+Ethereum a été la première blockchain à offrir un environnement de **smart contracts** suffisamment expressif, sécurisé et standardisé pour permettre l'émergence de protocoles financiers complexes (DEX, lending, dérivés, stablecoins).
 
 Il existe de la DeFi sur d'autres protocoles (Solana, Sui, Tron...) mais l'essentiel du capital se trouve sur Ethereum (L1 & L2).
 
@@ -35,9 +35,9 @@ IR jumping model
 
 ### Reserve factor
 
-En DeFi, le reserve factor est un paramètre de risque qui détermine la part des intérêts payés par les emprunteurs qui est conservée par le protocole, plutôt que distribuée aux fournisseurs de liquidité.
+En **DeFi**, le **reserve factor** est un **paramètre de risque** qui détermine la **part des intérêts payés par les emprunteurs qui est conservée par le protocole**, plutôt que distribuée aux fournisseurs de liquidité.
 
-Le reserve factor fixe le pourcentage alloué aux réserves.
+Le reserve factor fixe le pourcentage alloué aux **réserves**.
 
 **Rôles principaux :**
 - Sécurité : constitution d'un buffer contre les pertes (liquidations insuffisantes, bad debt)
