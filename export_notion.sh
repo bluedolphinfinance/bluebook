@@ -6,108 +6,211 @@ source /Users/admin/Workspace/work/competitive-analysis/.env.local
 API_URL="https://api.notion.com/v1"
 NOTION_VERSION="2022-06-28"
 
-# Function to convert block to markdown
+# Function to convert rich_text array to markdown (handles bold, italic, code, etc.)
+rich_text_to_md() {
+    local rich_text="$1"
+    echo "$rich_text" | jq -r '
+        [.[] |
+            (if .annotations.bold then "**" else "" end) +
+            (if .annotations.italic then "*" else "" end) +
+            (if .annotations.code then "`" else "" end) +
+            .plain_text +
+            (if .annotations.code then "`" else "" end) +
+            (if .annotations.italic then "*" else "" end) +
+            (if .annotations.bold then "**" else "" end)
+        ] | join("")
+    '
+}
+
+# Function to fetch table content
+fetch_table() {
+    local block_id="$1"
+    local indent="$2"
+
+    local rows=$(curl -s "$API_URL/blocks/$block_id/children?page_size=100" \
+        -H "Authorization: Bearer $NOTION_API_KEY" \
+        -H "Notion-Version: $NOTION_VERSION")
+
+    local first_row=true
+    echo "$rows" | jq -c '.results[]' | while read -r row; do
+        local cells=$(echo "$row" | jq -r '.table_row.cells | map(.[0].plain_text // "") | join(" | ")')
+        echo "$indent| $cells |"
+
+        # Add separator after header row
+        if [ "$first_row" = true ]; then
+            local col_count=$(echo "$row" | jq '.table_row.cells | length')
+            local separator=$(printf '|---%.0s' $(seq 1 $col_count))
+            echo "$indent$separator|"
+            first_row=false
+        fi
+    done
+}
+
+# Function to convert block to markdown with indentation
 block_to_md() {
     local block="$1"
+    local indent="$2"
+    local list_index="$3"
     local type=$(echo "$block" | jq -r '.type')
 
     case "$type" in
         "paragraph")
-            echo "$block" | jq -r '.paragraph.rich_text | map(.plain_text) | join("")'
-            echo ""
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.paragraph.rich_text')")
+            if [ -n "$text" ]; then
+                echo "${indent}${text}"
+                echo ""
+            fi
             ;;
         "heading_1")
-            local text=$(echo "$block" | jq -r '.heading_1.rich_text | map(.plain_text) | join("")')
-            echo "# $text"
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.heading_1.rich_text')")
+            echo "${indent}# $text"
             echo ""
             ;;
         "heading_2")
-            local text=$(echo "$block" | jq -r '.heading_2.rich_text | map(.plain_text) | join("")')
-            echo "## $text"
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.heading_2.rich_text')")
+            echo "${indent}## $text"
             echo ""
             ;;
         "heading_3")
-            local text=$(echo "$block" | jq -r '.heading_3.rich_text | map(.plain_text) | join("")')
-            echo "### $text"
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.heading_3.rich_text')")
+            echo "${indent}### $text"
             echo ""
             ;;
         "bulleted_list_item")
-            local text=$(echo "$block" | jq -r '.bulleted_list_item.rich_text | map(.plain_text) | join("")')
-            echo "- $text"
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.bulleted_list_item.rich_text')")
+            echo "${indent}- $text"
             ;;
         "numbered_list_item")
-            local text=$(echo "$block" | jq -r '.numbered_list_item.rich_text | map(.plain_text) | join("")')
-            echo "1. $text"
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.numbered_list_item.rich_text')")
+            echo "${indent}${list_index}. $text"
             ;;
         "to_do")
-            local text=$(echo "$block" | jq -r '.to_do.rich_text | map(.plain_text) | join("")')
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.to_do.rich_text')")
             local checked=$(echo "$block" | jq -r '.to_do.checked')
             if [ "$checked" = "true" ]; then
-                echo "- [x] $text"
+                echo "${indent}- [x] $text"
             else
-                echo "- [ ] $text"
+                echo "${indent}- [ ] $text"
             fi
             ;;
         "toggle")
-            local text=$(echo "$block" | jq -r '.toggle.rich_text | map(.plain_text) | join("")')
-            echo "<details>"
-            echo "<summary>$text</summary>"
-            echo "</details>"
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.toggle.rich_text')")
+            echo ""
+            echo "${indent}## $text"
             echo ""
             ;;
         "code")
             local text=$(echo "$block" | jq -r '.code.rich_text | map(.plain_text) | join("")')
             local lang=$(echo "$block" | jq -r '.code.language')
-            echo "\`\`\`$lang"
+            echo "${indent}\`\`\`$lang"
             echo "$text"
-            echo "\`\`\`"
+            echo "${indent}\`\`\`"
             echo ""
             ;;
         "quote")
-            local text=$(echo "$block" | jq -r '.quote.rich_text | map(.plain_text) | join("")')
-            echo "> $text"
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.quote.rich_text')")
+            echo "${indent}> $text"
             echo ""
             ;;
         "divider")
-            echo "---"
+            echo "${indent}---"
             echo ""
             ;;
         "callout")
-            local text=$(echo "$block" | jq -r '.callout.rich_text | map(.plain_text) | join("")')
+            local text=$(rich_text_to_md "$(echo "$block" | jq '.callout.rich_text')")
             local icon=$(echo "$block" | jq -r '.callout.icon.emoji // ""')
-            echo "> $icon $text"
+            echo "${indent}> $icon $text"
             echo ""
             ;;
         "child_page")
             local title=$(echo "$block" | jq -r '.child_page.title')
-            echo "📄 **[$title](./$title.md)**"
+            echo "${indent}📄 **[$title](./$title.md)**"
             echo ""
             ;;
         "table")
-            echo "[Table]"
+            local block_id=$(echo "$block" | jq -r '.id')
+            fetch_table "$block_id" "$indent"
             echo ""
             ;;
         "image")
             local url=$(echo "$block" | jq -r '.image.file.url // .image.external.url // ""')
             if [ -n "$url" ] && [ "$url" != "null" ]; then
-                echo "![]($url)"
+                echo "${indent}![]($url)"
                 echo ""
             fi
             ;;
         "bookmark")
             local url=$(echo "$block" | jq -r '.bookmark.url')
-            echo "🔗 $url"
+            local caption=$(echo "$block" | jq -r '.bookmark.caption[0].plain_text // ""')
+            if [ -n "$caption" ]; then
+                echo "${indent}🔗 **$caption**: $url"
+            else
+                echo "${indent}🔗 $url"
+            fi
             echo ""
             ;;
         "link_preview")
             local url=$(echo "$block" | jq -r '.link_preview.url')
-            echo "🔗 $url"
+            echo "${indent}🔗 $url"
             echo ""
             ;;
         *)
             # Skip unknown block types
             ;;
     esac
+}
+
+# Recursive function to process blocks with children
+process_blocks_recursive() {
+    local parent_id="$1"
+    local output_file="$2"
+    local indent="$3"
+    local depth="${4:-0}"
+
+    if [ "$depth" -gt 10 ]; then
+        echo "Max depth reached" >&2
+        return
+    fi
+
+    local blocks=$(curl -s "$API_URL/blocks/$parent_id/children?page_size=100" \
+        -H "Authorization: Bearer $NOTION_API_KEY" \
+        -H "Notion-Version: $NOTION_VERSION")
+
+    local list_index=1
+    local prev_type=""
+
+    echo "$blocks" | jq -c '.results[]' | while read -r block; do
+        local block_type=$(echo "$block" | jq -r '.type')
+        local block_id=$(echo "$block" | jq -r '.id')
+        local has_children=$(echo "$block" | jq -r '.has_children')
+
+        # Reset list counter if type changes
+        if [ "$block_type" != "$prev_type" ]; then
+            list_index=1
+        fi
+
+        # Convert block to markdown
+        block_to_md "$block" "$indent" "$list_index" >> "$output_file"
+
+        # Increment list counter for numbered lists
+        if [ "$block_type" = "numbered_list_item" ]; then
+            list_index=$((list_index + 1))
+        fi
+
+        prev_type="$block_type"
+
+        # Handle child pages separately
+        if [ "$block_type" = "child_page" ]; then
+            # Child pages are handled by the main export function
+            continue
+        fi
+
+        # Recursively process children (except tables which are handled in block_to_md)
+        if [ "$has_children" = "true" ] && [ "$block_type" != "table" ]; then
+            local child_indent="${indent}  "
+            process_blocks_recursive "$block_id" "$output_file" "$child_indent" $((depth + 1))
+        fi
+    done
 }
 
 # Function to fetch and convert a page
@@ -127,56 +230,45 @@ export_page() {
         -H "Notion-Version: $NOTION_VERSION")
 
     local title=$(echo "$page_info" | jq -r '.properties.title.title[0].plain_text // .properties.Name.title[0].plain_text // "untitled"')
+    local icon=$(echo "$page_info" | jq -r '.icon.emoji // ""')
 
     # Sanitize filename
-    local safe_title=$(echo "$title" | sed 's/[\/\\:*?"<>|]/-/g' | sed 's/  */ /g')
+    local safe_title=$(echo "$title" | sed "s/['\']/'/" | sed 's/[\/\\:*?"<>|]/-/g' | sed 's/  */ /g' | sed 's/ *$//')
     local filepath="$output_dir/$safe_title.md"
 
     echo "Exporting: $title -> $filepath" >&2
 
     mkdir -p "$output_dir"
 
-    # Start markdown file
-    echo "# $title" > "$filepath"
+    # Start markdown file with icon if present
+    if [ -n "$icon" ]; then
+        echo "# $icon $title" > "$filepath"
+    else
+        echo "# $title" > "$filepath"
+    fi
     echo "" >> "$filepath"
 
-    # Get page blocks
+    # Process blocks recursively
+    process_blocks_recursive "$page_id" "$filepath" "" 0
+
+    # Find and export child pages
     local blocks=$(curl -s "$API_URL/blocks/$page_id/children?page_size=100" \
         -H "Authorization: Bearer $NOTION_API_KEY" \
         -H "Notion-Version: $NOTION_VERSION")
 
-    # Process each block
-    echo "$blocks" | jq -c '.results[]' | while read -r block; do
-        local block_type=$(echo "$block" | jq -r '.type')
+    echo "$blocks" | jq -c '.results[] | select(.type == "child_page")' | while read -r block; do
         local block_id=$(echo "$block" | jq -r '.id')
-        local has_children=$(echo "$block" | jq -r '.has_children')
-
-        # Convert block to markdown
-        block_to_md "$block" >> "$filepath"
-
-        # If it's a child page, export it recursively
-        if [ "$block_type" = "child_page" ]; then
-            local child_title=$(echo "$block" | jq -r '.child_page.title')
-            local child_dir="$output_dir/$safe_title"
-            export_page "$block_id" "$child_dir" $((depth + 1))
-        fi
-
-        # If block has children (nested content), fetch them
-        if [ "$has_children" = "true" ] && [ "$block_type" != "child_page" ]; then
-            local children=$(curl -s "$API_URL/blocks/$block_id/children?page_size=100" \
-                -H "Authorization: Bearer $NOTION_API_KEY" \
-                -H "Notion-Version: $NOTION_VERSION")
-
-            echo "$children" | jq -c '.results[]' | while read -r child_block; do
-                echo "  " >> "$filepath"
-                block_to_md "$child_block" >> "$filepath"
-            done
-        fi
+        local child_title=$(echo "$block" | jq -r '.child_page.title')
+        local child_dir="$output_dir/$safe_title"
+        export_page "$block_id" "$child_dir" $((depth + 1))
     done
 }
 
 # Export function for external use
+export -f rich_text_to_md
+export -f fetch_table
 export -f block_to_md
+export -f process_blocks_recursive
 export -f export_page
 export NOTION_API_KEY
 export API_URL
