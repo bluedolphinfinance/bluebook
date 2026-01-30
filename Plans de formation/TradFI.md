@@ -2,7 +2,9 @@
 
 # Vue d'ensemble du parcours
 
-> Objectif final :
+> Objectif final : Être capable de **lire un produit TradFi comme un smart contract**,
+
+comprendre **le pricing**, **les risques**, et **reproduire mentalement l’équivalent DeFi**
 
 **Ordre pédagogique :**
 1. Marchés & actifs (le "terrain de jeu")
