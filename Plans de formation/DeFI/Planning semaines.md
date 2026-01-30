@@ -6,12 +6,12 @@ Durée : 24 semaines (~6 mois)
 
 Charge : 8–12h / semaine
 
-## PHASE 0 — RESET MENTAL & FRAMEWORK (Semaine 1)
+## PHASE 0 — RESET MENTAL & FRAMEWORK [Semaine 1]
 
   
 ### Semaine 1 — Mental models DeFi
 
-## PHASE 1 — INFRA & ETHEREUM STACK (Semaines 2 à 6)
+## PHASE 1 — INFRA & ETHEREUM STACK [Semaines 2 à 6]
 
   
 ### Semaine 2 — Ethereum & EVM fundamentals
@@ -28,7 +28,7 @@ Charge : 8–12h / semaine
   
 ### Semaine 6 — Sécurité & exploits
 
-## PHASE 2 — DEFI CORE (Semaines 7 à 12)
+## PHASE 2 — DEFI CORE [Semaines 7 à 12]
 
   
 ### Semaine 7 — Lending 1 : bases
@@ -48,7 +48,7 @@ Charge : 8–12h / semaine
   
 ### Semaine 12 — Synthèse DeFi core
 
-## PHASE 3 — MORPHO & BUSINESS CURATOR (Semaines 13 à 18)
+## PHASE 3 — MORPHO & BUSINESS CURATOR [Semaines 13 à 18]
 
   
 ### Semaine 13 — Morpho avancé
@@ -68,7 +68,7 @@ Charge : 8–12h / semaine
   
 ### Semaine 18 — Pitch LP
 
-## PHASE 4 — VEILLE & SCALE (Semaines 19 à 24)
+## PHASE 4 — VEILLE & SCALE [Semaines 19 à 24]
 
   
 - Veille quotidienne
@@ -78,7 +78,7 @@ Charge : 8–12h / semaine
 - Discussions forums
   
 - Networking LPs
-# CONSEIL FINAL (important)
+# CONSEIL FINAL [important]
 
   
 Ce plan te mène au top 5–10% des profils DeFi sérieux.
